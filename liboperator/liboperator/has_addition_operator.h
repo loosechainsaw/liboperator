@@ -9,7 +9,7 @@ namespace liboperator
 	{
 	private:
 
-		typedef char no;
+		class no{};
 
 		template<typename X1, typename X2>
 		static auto has(X1&& a, X2&& b) -> decltype( a + b){
