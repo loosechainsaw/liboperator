@@ -12,18 +12,31 @@ namespace liboperator
 
 		typedef char no;
 
-		static auto has(T1* a, T2* b) -> decltype( *a + *b);
+		template<typename X1, typename X2>
+		static auto has(X1 a, X2 b) -> decltype( a + b){
 
-		static char has(...);
+		}
+
+		static no has(...){
+
+		}
 
 	public:
 		enum{
-			value = (sizeof( has(new T1(), new T2())) != sizeof(no))
+			value = (sizeof( has(T1(), T2())) != sizeof(no))
 		};
 
 	};
 
-	
+	template<>
+	class has_addition_operator<char,char>
+	{
+	public:
+		enum{
+			value = true
+		};
+
+	};
 
 
 }
