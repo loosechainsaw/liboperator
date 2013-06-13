@@ -1,0 +1,4 @@
+liboperator
+===========
+
+Detecting C++ operators
