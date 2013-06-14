@@ -27,6 +27,9 @@
     <ClInclude Include="has_addition_operator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="has_assignment_operator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
