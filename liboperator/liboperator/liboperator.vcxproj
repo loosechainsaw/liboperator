@@ -81,6 +81,10 @@
   <ItemGroup>
     <ClInclude Include="has_addition_operator.h" />
     <ClInclude Include="has_assignment_operator.h" />
+    <ClInclude Include="has_dereference_operator.h" />
+    <ClInclude Include="has_division_operator.h" />
+    <ClInclude Include="has_multiplication_operator.h" />
+    <ClInclude Include="has_subtraction_operator.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>

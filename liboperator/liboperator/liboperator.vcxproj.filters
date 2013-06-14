@@ -30,6 +30,18 @@
     <ClInclude Include="has_assignment_operator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="has_subtraction_operator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="has_division_operator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="has_multiplication_operator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="has_dereference_operator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
