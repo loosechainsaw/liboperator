@@ -1,6 +1,8 @@
 #ifndef HAS_SUBSCRIPT_OPERATOR
 #define HAS_SUBSCRIPT_OPERATOR 
 
+#include <type_traits>
+
 namespace liboperator
 {
 
@@ -22,7 +24,7 @@ namespace liboperator
 
 	public:
 		enum{
-			value = ( !std::is_same<decltype( has(std::declval<T>())),no>::value)
+			value = ( std::is_array<T>::value || !std::is_same<decltype( has(std::declval<T>())),no>::value)
 		};
 
 	};

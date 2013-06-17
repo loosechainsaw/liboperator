@@ -5,6 +5,7 @@
 #include "has_subtraction_operator.h"
 #include "has_dereference_operator.h"
 #include "has_addressof_operator.h"
+#include "has_subscript_operator.h"
 
 struct point{
 	int x, y;
@@ -83,6 +84,10 @@ void testing_addressof_operator()
 	
 }
 
+void testing_subscript_operator(){
+	static_assert(liboperator::has_subscript_operator<fake_address_of>::value == 0,"fake_address_of should have address of operator");
+	static_assert(liboperator::has_subscript_operator<int[5]>::value == 1,"fake_address_of should have address of operator");
+}
 
 int main()
 {
