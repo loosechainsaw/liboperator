@@ -82,6 +82,8 @@
     <ClInclude Include="has_addition_operator.h" />
     <ClInclude Include="has_addressof_operator.h" />
     <ClInclude Include="has_assignment_operator.h" />
+    <ClInclude Include="has_compound_addition_operator.h" />
+    <ClInclude Include="has_compound_subtraction_operator.h" />
     <ClInclude Include="has_dereference_operator.h" />
     <ClInclude Include="has_division_operator.h" />
     <ClInclude Include="has_equal_to_operator.h" />
@@ -91,6 +93,7 @@
     <ClInclude Include="has_less_than_operator.h" />
     <ClInclude Include="has_multiplication_operator.h" />
     <ClInclude Include="has_not_equal_to.h" />
+    <ClInclude Include="has_subscript_operator.h" />
     <ClInclude Include="has_subtraction_operator.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />

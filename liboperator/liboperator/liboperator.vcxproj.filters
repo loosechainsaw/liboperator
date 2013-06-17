@@ -63,6 +63,15 @@
     <ClInclude Include="has_greater_than_equal_to_operator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="has_compound_addition_operator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="has_compound_subtraction_operator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="has_subscript_operator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
