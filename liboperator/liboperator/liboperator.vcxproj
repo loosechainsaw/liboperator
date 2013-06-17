@@ -80,6 +80,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="has_addition_operator.h" />
+    <ClInclude Include="has_addressof_operator.h" />
     <ClInclude Include="has_assignment_operator.h" />
     <ClInclude Include="has_dereference_operator.h" />
     <ClInclude Include="has_division_operator.h" />

@@ -42,6 +42,9 @@
     <ClInclude Include="has_dereference_operator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="has_addressof_operator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
