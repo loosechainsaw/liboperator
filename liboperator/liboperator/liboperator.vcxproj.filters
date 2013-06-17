@@ -45,6 +45,24 @@
     <ClInclude Include="has_addressof_operator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="has_equal_to_operator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="has_not_equal_to.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="has_less_than_operator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="has_greater_than_operator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="has_less_than_equal_to_operator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="has_greater_than_equal_to_operator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
