@@ -1,12 +1,16 @@
 #ifndef HAS_ADDITION_OPERATOR
 #define HAS_ADDITION_OPERATOR 
 
+#include <type_traits>
+
 namespace liboperator
 {
 
 	template<class T1, class T2>
 	class has_addition_operator
 	{
+		typedef typename std::remove_pointer< typename std::remove_reference<T1>::type >::type AT1;
+		typedef typename std::remove_pointer< typename std::remove_reference<T2>::type>::type AT2;
 	private:
 
 		class no{};
@@ -22,7 +26,7 @@ namespace liboperator
 
 	public:
 		enum{
-			value = ( !std::is_same<decltype( has(std::declval<T1>(), std::declval<T2>())),no>::value)
+			value = ( !std::is_same<decltype( has(std::declval<AT1>(), std::declval<AT2>())),no>::value)
 		};
 
 	};
