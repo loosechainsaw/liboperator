@@ -47,11 +47,7 @@ void testing_addition_operator()
 
 	static_assert(liboperator::has_addition_operator<point&,point&>::value == 1,"Points cannot be added");
 	static_assert(liboperator::has_addition_operator<point&,char&>::value == 0,"Points can be added characters");
-
-	static_assert(liboperator::has_addition_operator<point*,point*>::value == 1,"Points cannot be added");
 	static_assert(liboperator::has_addition_operator<point*,char*>::value == 0,"Points can be added characters");
-
-	static_assert(liboperator::has_addition_operator<point*&,point*&>::value == 1,"Points cannot be added");
 	static_assert(liboperator::has_addition_operator<point*&,char*&>::value == 0,"Points can be added characters");
 }
 
@@ -64,10 +60,8 @@ void testing_subtraction_operator()
 	static_assert(liboperator::has_subtraction_operator<point&,point&>::value == 0,"Points can be added");
 
 	static_assert(liboperator::has_subtraction_operator<point2*,point2*>::value == 1,"Point2s cannot be added");
-	static_assert(liboperator::has_subtraction_operator<point*,point*>::value == 0,"Points can be added");
 
 	static_assert(liboperator::has_subtraction_operator<point2*&,point2*&>::value == 1,"Point2s cannot be added");
-	static_assert(liboperator::has_subtraction_operator<point*&,point*&>::value == 0,"Points can be added");
 }
 
 void testing_dereference_operator()
@@ -85,7 +79,7 @@ void testing_addressof_operator()
 }
 
 void testing_subscript_operator(){
-	static_assert(liboperator::has_subscript_operator<fake_address_of>::value == 0,"fake_address_of should have address of operator");
+
 	static_assert(liboperator::has_subscript_operator<int[5]>::value == 1,"fake_address_of should have address of operator");
 }
 

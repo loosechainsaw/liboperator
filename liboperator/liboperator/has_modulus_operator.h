@@ -7,8 +7,6 @@ namespace liboperator
 	template<class T1, class T2>
 	class has_modulus_operator
 	{
-		typedef typename std::remove_pointer< typename std::remove_reference<T1>::type >::type AT1;
-		typedef typename std::remove_pointer< typename std::remove_reference<T2>::type>::type AT2;
 	private:
 
 		class no{};
